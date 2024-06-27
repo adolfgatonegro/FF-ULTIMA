@@ -302,3 +302,13 @@ KDE compat. for themed Window decoration buttons
 } /*--<--end linux media query--*/
 } /*--<--end OS preference query--*/
 
+/*------------------------------------------------------------------------*/
+/* No window controls */
+
+@media (-moz-bool-pref: "ultima.OS.nowindowcontrols") {
+@media (-moz-platform: linux), (-moz-os-version: linux) {
+
+    /*--size and positioning of the nav bar for less titlebar buttons--*/
+    #nav-bar {margin-right: 0px !important;}
+} /*--<--end linuxmedia query--*/
+} /*--<--end OS preference query--*/
