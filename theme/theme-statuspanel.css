@@ -14,7 +14,6 @@
     padding-top: 2em;
     pointer-events: none;  
 }
-}
 
 #main-window:not([lwtheme="true"]) #statuspanel-label {
   @media (not (prefers-contrast)) and (not (-moz-platform: linux)) {
@@ -24,6 +23,25 @@
     }
   }
 }
+}
 
+@media (-moz-bool-pref: "ultima.statuspanel.showonright"){
+	#statuspanel {
+		&:not([hidden]){
+		max-width: 50% !important;
+		/*display: flex !important;*/
+		justify-self: right !important;
+		padding-top: 0 !important;
+		inset-inline: auto !important;
+		min-width: unset !important;
+		}
+	}
+}
 
-
+@media (-moz-bool-pref: "ultima.statuspanel.hidden"){
+	#statuspanel {
+		&:not([hidden]){
+		display: none !important;
+		}
+	}
+}

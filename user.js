@@ -10,6 +10,10 @@ user_pref("ultima.tabs.vertical.onlyprivate", false);
 /*sidebar*/
 user_pref("ultima.sidebar.autohide", false);
 
+/*statuspanel*/
+user_pref("ultima.statuspanel.showonright", true);
+user_pref("ultima.statuspanel.hidden", false);
+
 /*extension theme on-off*/
 user_pref("ultima.theme.extensions", true);
 
@@ -25,7 +29,6 @@ user_pref("ultima.xstyle.containertabs.iii", true);
 user_pref("ultima.xstyle.squared", false);
 user_pref("ultima.xstyle.lwtheme", false); /* Experimental. To counter addon themes that use unusual color variables. */
 user_pref("ultima.xstyle.pinnedtabs.i", false); /* Experimental. Havent decided on style yet. */
-
 
 /*specific OS overrides (like titlebar buttons)*/
 user_pref("ultima.OS.kde", true);
